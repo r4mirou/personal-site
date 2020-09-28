@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react"
 import { useSelector } from "react-redux"
 import style from "./style.module.css"
 import clsx from "clsx"
-import { softCards } from "./componentsIn"
+import { softCards, hardCards } from "./componentsIn"
 
 const Skills = () => {
   const softHorizontalScrollRef = useRef(null)
@@ -104,7 +104,7 @@ const Skills = () => {
           [style.rightSoftShadowLight]: !darknessFilterControl,
           [style.rightSoftShadowDark]: darknessFilterControl
         })} />
-        {softCards()}
+        {hardCards()}
       </div>
       <div className={style.right}
         style={{ color: theme.pallete.primary }}

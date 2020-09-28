@@ -11,6 +11,18 @@ import HappinessSVG from "../../images/svg/colorHeart.svg"
 import CriticalSVG from "../../images/svg/colorList.svg"
 import FlexSVG from "../../images/svg/colorFlex.svg"
 import EthicSVG from "../../images/svg/colorLaw.svg"
+import BackendSVG from "../../images/svg/colorServer.svg"
+import FrontendSVG from "../../images/svg/colorNotebook.svg"
+import CSharpSVG from "../../images/svg/colorBinary.svg"
+import NodeSVG from "../../images/svg/colorKeyboard.svg"
+import ReactSVG from "../../images/svg/colorScreen.svg"
+import ReactNativeSVG from "../../images/svg/colorSmartphone.svg"
+import SqlSVG from "../../images/svg/colorCopy.svg"
+import GraphqlSVG from "../../images/svg/colorDocument.svg"
+import GatsbySVG from "../../images/svg/colorOven.svg"
+
+
+
 
 export const softCards = () => {
     const cards = [
@@ -60,11 +72,59 @@ export const softCards = () => {
     return result
 }
 
-const Card = (props) => {
+export const hardCards = () => {
+    const cards = [
+        {
+            title: "Gatsby",
+            image: GatsbySVG,
+        },
+        {
+            title: "Graphql",
+            image: GraphqlSVG,
+        },
 
+        {
+            title: "SQL",
+            image: SqlSVG,
+        },
+        {
+            title: "ReactNative",
+            image: ReactNativeSVG,
+        },
+        {
+            title: "ReactJs",
+            image: ReactSVG,
+        },
+        {
+            title: "NodeJs",
+            image: NodeSVG,
+        },
+        {
+            title: "C#",
+            image: CSharpSVG,
+        },
+        {
+            title: "Frontend",
+            image: FrontendSVG,
+        },
+        {
+            title: "Backend",
+            image: BackendSVG,
+        },
+    ]
+
+    let result = cards.map((item, i) =>
+        <Card title={item.title} image={item.image} />
+    )
+
+    return result
+}
+
+const Card = (props) => {
+    const theme = useSelector(state => state.theme.theme)
     return <div className={style.card}>
         <div className={style.divCardTitle}>
-            <h3 className={style.cardTitle}>{props.title}</h3>
+            <h3 className={style.cardTitle} style={{color: theme.pallete.primary}}>{props.title}</h3>
         </div>
         <div className={style.bar}>
             <div className={style.filledbar}></div>

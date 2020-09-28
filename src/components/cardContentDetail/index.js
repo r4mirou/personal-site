@@ -89,7 +89,7 @@ const CardContentDetail = props => {
           </div>
           <div
             className={style.readMore}
-            style={{ background: theme.pallete.componentTransparency }}
+            style={{marginTop:"8px", background: theme.pallete.componentTransparency }}
             onClick={() => scrollY("down")}
           >
             <div className={bounceDown.bounceDown} ref={refDownBtnMore}>

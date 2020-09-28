@@ -11,10 +11,17 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <footer >
+        <div style={{height:"50px", 
+        background: theme.pallete.componentTransparency,
+        color:theme.textColor.componentText,
+        display:"flex",
+        justifyContent:"flex-end",
+        padding:"20px",
+        boxShadow: "0px -3px 14px -2px " + theme.pallete.primary,
+        }}>
+            Developed by &nbsp;<span style={{color: theme.pallete.primary}}>Ramiro4Dev!</span>
+        </div>
       </footer>
     </>
   )

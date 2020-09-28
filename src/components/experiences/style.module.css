@@ -1,6 +1,5 @@
 .list{
-    margin : 0;
-    margin-top: 30vh ;
+    margin : 30vh 0;
 }
 .list > li{
     margin : 0;
@@ -43,7 +42,7 @@
     border-bottom-right-radius: 3px;
 }
 .list > li:nth-child(even) .lineContainerIntern {order:2}
-.list > li:nth-child(even) .description {order:1;text-align: end;}
+.list > li:nth-child(even) .description {order:1;text-align: start;}
 .list > li:nth-child(even) .ballonMessage::after {
     /* [THESE WILL CREATE THE TRIANGLE] */
     content: '';

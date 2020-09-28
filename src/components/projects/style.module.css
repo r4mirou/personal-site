@@ -1,3 +1,6 @@
+/* https://emoji-css.afeld.me/ */
+@import url('https://emoji-css.afeld.me/emoji.css');
+
 .containerComponent {
   height: 400px;
   /* background: greenyellow; */
@@ -49,4 +52,6 @@
 .content::-webkit-scrollbar-thumb {
   background: rebeccapurple; 
 }
-
+.emoji{
+  font-size: .9rem;
+}

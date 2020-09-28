@@ -11,7 +11,7 @@ const Projects = () => {
     paddingBottom: "20vh",
     clipPath: "polygon(0 0, 100% 18%, 100% 100%, 0 84%)",
     background: theme.gradientLinear.gradientPrimary,
-  }}>
+  }}>    
     <SliderStack title={"Alguns projetos legais..."} componentsIn={components()} />
   </div>
 }

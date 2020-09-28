@@ -45,9 +45,16 @@ const Experiences = () => {
               { [style.hoverDescription]: indexControlDescription === 1}
             )}>
               <div className={clsx(style.ballonMessage)} style={{ color: theme.textColor.secondaryText, background: theme.gradientLinear.gradientSecondary }}>
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
+                <b>(4 anos - Dev. Sênior)</b><br/><br/>
+                Gestão do sistema de gabiente do prefeito.<br/>
+                Responsável por todas as demandas relacionadas ao sistema, 
+                juntamente com um colega dev. júnior.<br/><br/>
+                • Gerenciamento de nova features e implantações<br/>
+                • Análise e levantamento de requisitos <br/>
+                • Manutenção e desenvolvimento C#<br/>
+                • Manutenção de banco de dados SQL Server<br/>
+                • Deploy<br/>
+                • Suporte ao usuário<br/>
               </div>
             </div>
           </div>
@@ -70,7 +77,7 @@ const Experiences = () => {
                 onMouseEnter={() => handleDescription(2)}
                 onClick={() => handleDescription(indexControlDescription !== 2 ? 2 : 0 )}
               >
-                Prefeitura Municipal de Porto Alegre
+                Câmara de Deputados Federais
               </div>
             </div>
             <div className={clsx(style.lineContainerIntern)}>
@@ -85,9 +92,12 @@ const Experiences = () => {
               { [style.hoverDescription]: indexControlDescription === 2 }
             )}>
               <div className={clsx(style.ballonMessage)} style={{ color: theme.textColor.secondaryText, background: theme.gradientLinear.gradientSecondary }}>
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
+                <b>(2 anos e meio - Dev. Pleno)</b><br/><br/>
+                Gestão do sistema de CRM do gabiente do deputado.<br/>
+                Desenvolvimento do sistema juntamente com um colega dev. sênior<br/><br/>
+                • Manutenção e desenvolvimento C#<br/>
+                • Manutenção de banco de dados SQL Server<br/>
+                • Suporte ao usuário<br/>
               </div>
             </div>
           </div>
@@ -109,7 +119,7 @@ const Experiences = () => {
                 onMouseEnter={() => handleDescription(3)}
                 onClick={() => handleDescription(indexControlDescription !== 3 ? 3 : 0 )}
                 style={{ color: theme.textColor.primaryText, background: theme.gradientLinear.gradientPrimary }} >
-                Prefeitura Municipal de Porto Alegre
+                Nextdata Informática
               </div>
             </div>
             <div className={clsx(style.lineContainerIntern)}>
@@ -124,9 +134,13 @@ const Experiences = () => {
               { [style.hoverDescription]: indexControlDescription === 3 }
             )}>
               <div className={clsx(style.ballonMessage)} style={{ color: theme.textColor.secondaryText, background: theme.gradientLinear.gradientSecondary }}>
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
+                <b>(1 ano e 3 meses - Estagiário)</b><br/><br/>
+                Auxiliar nas demandas de desenvolvimento do software de força
+                tarefa de vendas da empresa.<br/><br/>
+                • Manuteção e desenvolvimento Vb .net<br/>
+                • Manutenção de banco de dados<br/>
+                • Suporte remoto aos clientes<br/>
+                • Treinamento de uso do sistema<br/>
               </div>
             </div>
           </div>
@@ -147,8 +161,8 @@ const Experiences = () => {
               <div 
               onMouseEnter={() => handleDescription(4)}
               onClick={() => handleDescription(indexControlDescription !== 4 ? 4 : 0 )}
-              className={clsx(style.title)} style={{ color: theme.textColor.primaryText, background: theme.gradientLinear.gradientPrimary }} >
-                Prefeitura Municipal de Porto Alegre
+              className={clsx(style.title)} style={{ color: theme.textColor.primaryText, background: theme.gradientLinear.gradientPrimary }} >                 
+                Dimed - grupo Panvel
               </div>
             </div>
             <div className={clsx(style.lineContainerIntern)}>
@@ -163,9 +177,12 @@ const Experiences = () => {
               { [style.hoverDescription]: indexControlDescription === 4 }
             )}>
               <div className={clsx(style.ballonMessage)} style={{ color: theme.textColor.secondaryText, background: theme.gradientLinear.gradientSecondary }}>
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
-                blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
+                <b>(7 meses - Estagiário)</b><br/><br/>
+                Auxiliar na manuteção e desenvolvimento do software de ponto de vendas
+                da Panvel.<br/><br/>
+                • Desemvolvimento em Delphi<br/>
+                • Desenvolvimento de Software PDV em kylix<br/>
+                • Participação no projeto Totens<br/>
               </div>
             </div>
           </div>

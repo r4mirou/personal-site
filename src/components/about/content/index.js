@@ -26,7 +26,7 @@ const AboutContent = () => {
         dias corro por eles.
         <br />
         <br />
-        Meu lema é: "Não importa oq eu tenha que resolver, eu vou achar um jeito
+        Meu lema: "Não importa oq eu tenha que resolver, eu vou achar um jeito
         de resolver!".
       </p>
     </>
