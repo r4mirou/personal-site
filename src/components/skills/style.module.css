@@ -1,0 +1,206 @@
+.root{
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: auto;
+  background-color: transparent;
+}
+/* .root::-webkit-scrollbar { width: 0 !important } */
+.container{
+  /* position: relative; */
+}
+.horizontalScroll{
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  /* padding-left: 60px;
+  padding-right: 70px; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space:nowrap;
+  background-color: transparent;
+}
+/* .horizontalScroll::-webkit-scrollbar { width: 0 !important } */
+.leftSoftShadowLight{
+  top:30%;
+  left:-90px;
+  height: 80%;
+  width: 30px;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  background: white;
+  box-shadow:
+        0 0 60px 30px #fff,
+        0 0 100px 60px #fff,
+        0 0 140px 90px #fff;
+}
+.leftSoftShadowDark{
+  top:30%;
+  left:0px;
+  height: 80%;
+  width: 30px;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  background: linear-gradient(to right,
+  rgba(33, 33, 33, 1),
+  transparent);
+}
+.rightSoftShadowLight{
+  top:30%;
+  right:-90px;
+  height: 80%;
+  width: 30px;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  background: white;
+  box-shadow:
+        0 0 60px 30px #fff,
+        0 0 100px 60px #fff,
+        0 0 140px 90px #fff;
+}
+.rightSoftShadowDark{
+  top:30%;
+  right:0px;
+  height: 80%;
+  width: 30px;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  background: linear-gradient(to left,
+  rgba(33, 33, 33, 1),
+  transparent
+  );
+}
+.left{
+  position: absolute;
+  left:-5px;
+  top: 60%;
+  font-size: 2em;
+  z-index: 2;
+}
+.right{
+  position: absolute;
+  right:-5px;
+  top: 60%;
+  font-size: 2em;
+  z-index: 2;
+}
+.divTitle{
+  /* margin-bottom: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divCardTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 170px;
+  height: 180px;
+  background-color: transparent;
+  display:inline-block;
+  transition: .5s ease-in-out;
+  cursor: grab;
+}
+.card:hover {
+  width: 170px;
+}
+.card:hover .cardTitle {
+  opacity: 1;
+}
+.card:hover .iconSkill {
+  opacity: 1;
+  transform: scale(.9);
+  animation: none;
+}
+.cardTitle{
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+}
+/* .emptybar {
+  background-color: silver;
+  height: 100%;
+} */
+.filledbar {
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  margin-top: -5px;
+  transition: .5s ease-in-out;
+  background: red;
+}
+.iconSkill{
+  width: 98px;
+  margin-left: -104px;
+  margin-top: -7px;
+  opacity: 0.8;
+  transition: .5s ease-in-out;
+  /* pointer-events: none; */
+}
+.circle {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.stroke {
+  stroke: silver;
+  stroke-dasharray: 420;
+  stroke-dashoffset: 100;
+  transition: .5s ease-in-out;
+}
+svg {
+  fill: transparent;
+  stroke-width: 3px;
+  width: 115px;
+}
+.card:hover .stroke {
+  stroke: rebeccapurple;
+  stroke-dashoffset: 840;
+  transition: .5s ease-in-out;
+}
+.card:hover .filledbar {
+  background: #CFF72E;
+  width: 100%;
+  transition: .5s ease-in-out;
+}
+.card:hover .cardSubTitle {
+  visibility: visible;
+}
+
+@media (max-width:640px) {
+  .horizontalScroll{
+      padding-left: 80px;
+      padding-right: 80px;
+  }
+  .iconSkill{
+    opacity: 1;
+    animation: pulse 1s infinite;
+    transition: .5s ease-in-out;
+  }
+  .leftSoftShadowLight{
+    left: -70px;
+  }
+  .leftSoftShadowDark{
+    left: -5px;
+  }
+  .rightSoftShadowLight{
+    right: -70px;
+  }
+  .rightSoftShadowDark{
+    right: -5px;
+  }
+}
+
+@keyframes pulse {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}

@@ -1,0 +1,18 @@
+.slideRight{
+    position:relative;
+    animation:slideRight .7s ease-out
+}
+@keyframes slideRight{
+    from{
+        right:-300px;
+        opacity:0
+    }
+    50%{opacity:0.4;}
+    90%{
+        transform: skew(-10deg);
+      }
+    to{
+        right:0;
+        opacity:1
+    }
+}

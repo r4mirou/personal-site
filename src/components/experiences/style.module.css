@@ -1,0 +1,228 @@
+.list{
+    margin : 0;
+    margin-top: 30vh ;
+}
+.list > li{
+    margin : 0;
+}
+.list > li:last-child .description{ margin: 0;}
+/* line odd(impar) */
+.list > li:nth-child(odd) .containerTitle { order:1; text-align: end;}
+.list > li:nth-child(odd) .title { 
+    float: right;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.list > li:nth-child(odd) .lineContainerIntern {order:2}
+.list > li:nth-child(odd) .description {order:3;text-align: start;}
+.list > li:nth-child(odd) .ballonMessage::after {
+    /* [THESE WILL CREATE THE TRIANGLE] */
+    content: '';
+    border: 20px solid transparent;
+    border-top-color: greenyellow;
+    border-bottom: 0;
+    z-index: -1;
+
+    /* [THESE WILL POSITION THE TRIANGLE] */
+    position: absolute;
+    top:10px;
+    bottom: 0px;
+    left: 30px;
+    margin-left: -20px;
+}
+
+/* line even(par) */
+.list > li:nth-child(even) .containerTitle { order:3;text-align: start;}
+.list > li:nth-child(even) .title { 
+    float: left;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.list > li:nth-child(even) .lineContainerIntern {order:2}
+.list > li:nth-child(even) .description {order:1;text-align: end;}
+.list > li:nth-child(even) .ballonMessage::after {
+    /* [THESE WILL CREATE THE TRIANGLE] */
+    content: '';
+    border: 20px solid transparent;
+    border-top-color: greenyellow;
+    border-bottom: 0;
+    z-index: -1;
+
+    /* [THESE WILL POSITION THE TRIANGLE] */
+    position: absolute;
+    top:10px;
+    right: 10px;
+    /* bottom: 0px; */
+    /* left: 30px; */
+    margin-left: -20px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    /* background-color: DodgerBlue;
+    padding: 10px; */
+}
+.lineContainer{
+    flex: 1;
+    display: none;
+    /* background: rebeccapurple; */
+}
+.containerIntern{
+    flex:10;
+    display: flex;
+    flex-direction: row;
+    /* background-color: green; */
+}
+.containerTitle{
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex: 5;
+    /* background: greenyellow; */
+}
+.title{
+    /* float: right; */
+    /* border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; */
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    width: auto;
+    background: rebeccapurple;
+    transition: .5s ease-in-out;
+    animation: pulse 1s linear infinite;
+}
+.title:hover{
+    transform: scale(.95);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .3);
+}
+.lineContainerIntern{
+    flex: 1;
+    /* background: cyan; */
+}
+.line{
+    border-left: 2px dashed black;
+    margin-left: 50%;
+    height: 100%;
+    z-index: 0;
+}
+.pointer{
+    margin-left: -45%;
+    width: 100%;
+    z-index: 1;
+}
+.pointerSvg{
+    width: 40px;
+    animation: rotating 3s linear infinite;
+}
+.description{
+    flex: 5;
+    left: 9vw;
+    position: relative;
+    margin-bottom: 10%;
+    transition: 1s ease-in-out;
+}
+.hoverDescription{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(-9vw);
+}
+.notHoverDescription{
+    opacity: 0;
+    filter: blur(20px);
+}
+.ballonMessage {
+    border: solid 1px greenyellow;
+    margin: 0px 30px 20px 30px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 640px ) {
+
+    .lineContainer{display:flex}
+    .lineContainerIntern{display:none}
+    .containerIntern{flex-direction: column;}
+
+    .list{
+        margin : 0;
+        margin-top: 15vh ;
+    }
+
+    /* .list > li:nth-child(n) .lineContainer { order:0;text-align: start;} */
+    .list > li:nth-child(n) .containerTitle { order:2; text-align: start;}
+    .list > li:nth-child(n) .description {order:3; text-align: start;}
+
+    .list > li:nth-child(n) .title {
+        float: left;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; 
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px; 
+    }
+    .list > li:nth-child(n)  {
+/*
+        content: "";
+        display: table;
+        clear: both; */
+
+        /* [THESE WILL CREATE THE TRIANGLE] */
+        /* content: '';
+        border: 20px solid transparent;
+        border-top-color: seagreen;
+        border-bottom: 0; */
+
+        /* [THESE WILL POSITION THE TRIANGLE] */
+        /* position: absolute;
+        top:10px;
+        bottom: 0px;
+        left: 30px;
+        margin-left: -20px; */
+    }
+
+
+
+    .pointer{
+        margin-left: -55%;
+        width: 100%;
+        z-index: 1;
+    }
+    .pointerSvg{
+        width: 40px;
+        animation: rotating 3s linear infinite;
+    }
+    .description{
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(-9vw);
+    }
+
+}
+
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.02);}
+    100%{transform: scale(1);}
+  }

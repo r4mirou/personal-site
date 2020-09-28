@@ -1,0 +1,15 @@
+.neon{
+  animation: neon 1s alternate infinite ease-in;
+}
+.hover{
+  animation: none;
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--color-neon, yellowgreen));
+  }
+  to{
+    filter: drop-shadow(0 0 var(--space-shadow, 15px) var(--color-neon, yellowgreen));
+  }
+}

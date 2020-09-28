@@ -1,0 +1,27 @@
+.containerBox{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.containerComponent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.description{
+    text-align: center;
+    font-size: .9em;
+}
+@media (max-width:950px) and (min-width:641px) {
+    .description{
+        text-align: center;
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 640px ) {
+    .description{
+        text-align: center;
+        font-size: 1em;
+    }
+}
