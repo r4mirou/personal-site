@@ -10,10 +10,16 @@ body {
   background: white;
 }
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  background: transparent;
 }
 body::-webkit-scrollbar-thumb {
-  background: rebeccapurple; 
+  background: greenyellow; 
+  outline: 1px solid slategrey;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px greenyellow;
 }
 img{  
   user-select: none;
@@ -633,4 +639,14 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+a {
+  color: rebeccapurple
+}
+a:visited{
+  color: rebeccapurple
+}
+a:hover {
+  color: greenyellow;
 }

@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import BgHeader from "../components/bgHeader"
 import Layout from "../components/layout"
 import Section from "../components/containerSection"
+import Anchor from "../components/anchor"
 import Gradient from "../components/gradient"
 import CardContentDetail from "../components/cardContentDetail"
 import AboutContent from "../components/about/content"
@@ -15,9 +16,11 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <BgHeader />
+    
     <Layout>
-      <Gradient />
-      <Section>
+      <Gradient />      
+      <Section>      
+        <Anchor id="anchorAbout" marginTop="-20vh" />
         <div style={{ padding: "0 10vw", marginBottom: "150px" }}>
           <CardContentDetail
             content={<AboutContent />}
@@ -27,12 +30,15 @@ const IndexPage = () => (
       </Section>
 
       <Section>
+      <Anchor id="anchorSkills" marginTop="-10vh" />
         <Skills />
       </Section>
       {/* <Section > */}
+      <Anchor id="anchorProjects" marginTop="25vh" />
         <Projects />
       {/* </Section> */}
       <Section>
+      <Anchor id="anchorExperiences" marginTop="-15vh" />
         <Experiences />
       </Section>
     </Layout>

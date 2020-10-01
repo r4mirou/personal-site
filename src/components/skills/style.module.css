@@ -76,14 +76,14 @@
 }
 .left{
   position: absolute;
-  left:-5px;
+  left:5px;
   top: 60%;
   font-size: 2em;
   z-index: 2;
 }
 .right{
   position: absolute;
-  right:-5px;
+  right:5px;
   top: 60%;
   font-size: 2em;
   z-index: 2;
