@@ -26,7 +26,6 @@ const Header = () => {
   `)
 
   return (
-
     <header>
       <div className={style.logo}>
         <Img fixed={data.logo.childImageSharp.fixed} draggable={false} style={{ marginTop: "10px" }} />
@@ -42,8 +41,7 @@ const Header = () => {
       </nav>
       <div className={style.menuToggle} onClick={() => handleMenu(!controlMenu)}>
         {!controlMenu 
-          ? <FaBars className={style.icon}
-          /> 
+          ? <FaBars className={style.icon}/> 
           : <FaTimes className={style.icon}/>}
       </div>
     </header>
