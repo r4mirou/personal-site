@@ -42,7 +42,8 @@ const Header = () => {
       </nav>
       <div className={style.menuToggle} onClick={() => handleMenu(!controlMenu)}>
         {!controlMenu 
-          ? <FaBars className={style.icon}/> 
+          ? <FaBars className={style.icon}
+          /> 
           : <FaTimes className={style.icon}/>}
       </div>
     </header>

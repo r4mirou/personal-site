@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   margin: 0;
@@ -640,14 +641,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
-/* a {
-  color: rebeccapurple
-}
-a:visited{
-  color: rebeccapurple
-}
-a:hover {
-  color: greenyellow;
-  text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px greenyellow, 0 0 10px;
-} */
