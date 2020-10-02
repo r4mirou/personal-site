@@ -3,7 +3,7 @@
   "private": true,
   "description": "My personal blog.",
   "version": "1.0.0",
-  "author": "Ramiro Lima - GitHub: r4mirou",
+  "author": "Ramiro Lima - @r4mirou",
   "dependencies": {
     "clsx": "^1.1.1",
     "gatsby": "^2.23.10",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/r4mirou/personal-site"
   }
 }
