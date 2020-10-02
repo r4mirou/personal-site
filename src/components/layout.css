@@ -641,7 +641,7 @@ pre tt:after {
   }
 }
 
-a {
+/* a {
   color: rebeccapurple
 }
 a:visited{
@@ -649,4 +649,5 @@ a:visited{
 }
 a:hover {
   color: greenyellow;
-}
+  text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px greenyellow, 0 0 10px;
+} */
