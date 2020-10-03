@@ -36,7 +36,7 @@ const Header = () => {
           <li onClick={() => handleMenu(false)}><AnchorLink to="/#anchorSkills"><span>Skills</span></AnchorLink></li>
           <li onClick={() => handleMenu(false)}><AnchorLink to="/#anchorProjects"><span>Projetos</span></AnchorLink></li>
           <li onClick={() => handleMenu(false)}><AnchorLink to="/#anchorExperiences"><span>Experiências</span></AnchorLink></li>
-          <li onClick={() => handleMenu(false)}><AnchorLink to="/#anchorBlog"><span>Blog</span></AnchorLink></li>
+          <li onClick={() => handleMenu(false)}><a href="https://blog.ramiro4dev.com.br"><span>Blog</span></a></li>
         </ul>
       </nav>
       <div className={style.menuToggle} onClick={() => handleMenu(!controlMenu)}>
